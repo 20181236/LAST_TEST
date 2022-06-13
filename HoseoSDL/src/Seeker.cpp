@@ -33,9 +33,12 @@ void Seeker::arrive()
 void Seeker::draw(SDL_Renderer* renderer)
 {
 	filledCircleColor(renderer, _x, _y, 1, 0xFFFFFF00);
+	//감시 상자 만들어야함
+	boxlen = ? 의 최소박스길이 + speed / deceleration * 최소박스길이;
 }
 
 void Seek(Vector2D TargetPos, Vector2D modification)
 {
+	//찾는 함수가 필요
 	Vector2D DesiredVelocity = Vector2D::normalize(TargetPos - );
 }

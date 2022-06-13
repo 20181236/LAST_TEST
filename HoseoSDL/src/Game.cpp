@@ -6,6 +6,7 @@
 
 #include "Seeker.h"
 #include "Walker.h"
+#include "obstacles.h"
 
 #include <math.h>
 

@@ -17,5 +17,6 @@ private:
 	Vector2D deceleration;
 	Vector2D dist;
 	int MaxSpeed;
+	int boxlen;
 	// direction;
 };
