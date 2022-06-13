@@ -12,5 +12,12 @@ public:
 	void update();
 
 private:
-
+	int speed;
+	int deceleration;
+	int dist;
+	int MaxSpeed;
 };
+
+// 방향 = VT = OT - OV
+//거리 =VT.Lenght()'
+//=DV VT * speed/거리

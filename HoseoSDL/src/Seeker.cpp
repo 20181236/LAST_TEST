@@ -22,5 +22,6 @@ void Seeker::draw(SDL_Renderer* renderer)
 
 void Seek(Vector2D TargetPos, Vector2D modification)
 {
-	Vector2D DesiredVelocity = Vector2D::normalize(TargetPos - )
+	Vector2D DesiredVelocity = Vector2D::normalize(TargetPos - );
 }
+
