@@ -9,15 +9,11 @@ public:
   Walker(int x, int y);
   void draw(SDL_Renderer* renderer);
   void update();
-  void flee();
-
+  void hide();
 
 private:
-	Vector2D speed;
-	Vector2D deceleration;
 	Vector2D dist;
-	int MaxSpeed;
-	// direction;
-
+	Vector2D DistTocloset;
+	Vector2D best spot;
 
 };

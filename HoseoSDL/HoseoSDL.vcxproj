@@ -145,6 +145,7 @@
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\InputHandler.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\obstacles.cpp" />
     <ClCompile Include="src\Seeker.cpp" />
     <ClCompile Include="src\Walker.cpp" />
   </ItemGroup>
@@ -152,6 +153,7 @@
     <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\InputHandler.h" />
     <ClInclude Include="include\main.h" />
+    <ClInclude Include="include\obstacles.h" />
     <ClInclude Include="include\Seeker.h" />
     <ClInclude Include="include\Vector2D.h" />
     <ClInclude Include="include\Walker.h" />

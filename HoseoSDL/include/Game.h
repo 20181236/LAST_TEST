@@ -7,6 +7,7 @@
 
 class Walker;
 class Seeker;
+class obstacles;
 class Vector2D;
 
 class Game {
@@ -44,6 +45,7 @@ private:
     Vector2D* _mousePos;
     Walker* _walker;
     Seeker* _Seeker;
+    obstacles* _obstacles;
 
     SDL_Texture* mTexture;
     SDL_Rect _srcRect;

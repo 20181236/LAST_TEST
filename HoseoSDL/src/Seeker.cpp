@@ -15,30 +15,19 @@ void Seeker::update()
 
 }
 
-void Seeker::draw(SDL_Renderer* renderer)
+void Seeker::arrive()
 {
-	filledCircleColor(renderer, _x, _y, 1, 0xFFFFFF00);
-}
-
-void Seek(Vector2D TargetPos, Vector2D modification)
-{
-	Vector2D DesiredVelocity = Vector2D::normalize(TargetPos - );
-
-	void Walker::flee()//)
+	Vector2D Target = TargetPos - ? ? ? ->pos;
+	direction = Vector2D ? ? -Vector2D ? ? ;//방향 = VT = OT - OV
+	dist = direction.length();
+	if (dist > 0)
 	{
-		Vector2D Target = TargetPos - ? ? ? ->pos;
-		direction = Vector2D ? ? -Vector2D ? ? ;//방향 = VT = OT - OV
-		dist = direction.length();
-		if (dist > 0)
-		{
-			speed = dist / Deceleration;
-			speed = min(speed, MaxSpeed);
-			DV = direction * speed / dist;
-			return dv - cv;//???리턴..?
-		}
-	}
+		speed = dist / Deceleration;
+		speed = min(speed, MaxSpeed);
+		DV = direction * speed / dist;
+		return dv - cv;//???리턴..?
 
-	/*
+		/*
 	처리 (Process)
 	방향  = VT = OT - OV
 	거리 = VT.Length();   // 정확한 루트 연산
@@ -52,5 +41,15 @@ void Seek(Vector2D TargetPos, Vector2D modification)
 	*/
 
 	//아무래도 이전의 한글은 깨지고 새로쓴건 ㅇ남아있다고 추측
+
 }
 
+void Seeker::draw(SDL_Renderer* renderer)
+{
+	filledCircleColor(renderer, _x, _y, 1, 0xFFFFFF00);
+}
+
+void Seek(Vector2D TargetPos, Vector2D modification)
+{
+	Vector2D DesiredVelocity = Vector2D::normalize(TargetPos - );
+}

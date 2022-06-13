@@ -105,6 +105,14 @@ public:
         }
     }
 
+    //은신지점 결정
+    Vector2D GetHidingPos(const Vector2D& posOb,//장애물 위치
+        const double     radiusOb,// 장애물 반경
+        const Vector2D& posHunter)// Seeker위치
+    {
+
+    }
+
 private:
     float m_x;
     float m_y;

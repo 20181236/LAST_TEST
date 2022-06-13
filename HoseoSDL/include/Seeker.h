@@ -10,7 +10,7 @@ public:
 	Seeker(int x, int y);
 	void draw(SDL_Renderer* renderer);
 	void update();
-	void flee();
+	void arrive();
 
 private:
 	Vector2D speed;
