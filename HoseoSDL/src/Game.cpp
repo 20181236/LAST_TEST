@@ -4,6 +4,7 @@
 #include "Game.h"
 #include "InputHandler.h"
 
+#include "Seeker.h"
 #include "Walker.h"
 
 Game* Game::s_pInstance = 0;
@@ -15,7 +16,7 @@ bool Game::setup()
   result = init("Nature of Code", 0, 0, WIDTH, HEIGHT, false);
 
   _walker = new Walker(WIDTH/2,HEIGHT/2);
-
+  _Seeker = new Seeker(WIDTH / 2 + 500, HEIGHT / 2 + 500);
 
   return result;
 }
@@ -23,6 +24,7 @@ bool Game::setup()
 void Game::update()
 {
   _walker->update();
+  _Seeker->update();
 
   SDL_SetRenderDrawColor(m_pRenderer, 0, 0, 0, 255);
 }
@@ -32,12 +34,10 @@ void Game::render()
   SDL_RenderClear(m_pRenderer);  
 
   _walker->draw(m_pRenderer);
-
+  _Seeker->draw(m_pRenderer);
   
   SDL_RenderPresent(m_pRenderer); 
 
-
-  // ?¬ê°??ê·¸ë¦¬ê¸?
   /*
 
   SDL_Rect rect[2];
@@ -59,6 +59,7 @@ void Game::render()
 void Game::clean() 
 {
   delete _walker;
+  delete _Seeker;
   
   TheInputHandler::Instance()->clean();
   
