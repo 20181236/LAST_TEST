@@ -22,7 +22,12 @@ void Walker::hide()
 {
 	//1단계 각각 장애물 은신 지점 결정
 
+	radiusOb + DistanceBoundrary;//장애물반경에 +를 해줘야... 감지...
+}
 
+void Walker::arrive()
+{
+	//회피 다하고 천천히 도착할게 필요함
 }
 
 

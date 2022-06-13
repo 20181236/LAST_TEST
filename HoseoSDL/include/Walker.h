@@ -10,10 +10,13 @@ public:
   void draw(SDL_Renderer* renderer);
   void update();
   void hide();
+  void arrive();
 
 private:
 	Vector2D dist;
 	Vector2D DistTocloset;
-	Vector2D best spot;
+	Vector2D bestspot;
+	
+	const double DistanceBoundrary = 50;
 
 };
