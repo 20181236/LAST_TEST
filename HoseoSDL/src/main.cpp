@@ -6,7 +6,7 @@ const int DELAY_TIME = 1000.0f / FPS;
 
 //git test 1
 
-//한글 깨짐 테스트
+//한글 깨짐 테스트 2
 
 int main(int argc, char* argv[])
 {
