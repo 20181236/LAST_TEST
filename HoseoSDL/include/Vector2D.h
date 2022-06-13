@@ -113,6 +113,11 @@ public:
 
     }
 
+    Vector2D force()
+    {
+        //스티어링 포스... 회전값
+    }
+
 private:
     float m_x;
     float m_y;

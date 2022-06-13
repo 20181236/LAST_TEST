@@ -24,7 +24,7 @@ bool Game::setup()
   _Seeker = new Seeker(WIDTH / 2 + 500, HEIGHT / 2 + 500);
   for (int i = 0; i < 5; i++)
       _obstacles = new obstacles(WIDTH / 2 + randrand, HEIGHT / 2 + randrand);
-
+  //장애물 5개와 위치 랜덤..
   return result;
 }
 
