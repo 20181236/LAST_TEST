@@ -33,19 +33,21 @@ void Walker::flee()//)
 	{
 		speed = dist / Deceleration;
 		speed = min(speed, MaxSpeed);
+		DV = direction * speed / dist;
 	}
 }
 
 /*
-처리(Process)
-방향 = VT = OT - OV
-거리 = VT.Length();   // 정확한 루트 연산 그.. 시플플의..
-if (거리 > 0) {
-	// 감속하며 목표위치로 이동
+처리 (Process)
+방향  = VT = OT - OV
+거리 = VT.Length();   // 정확한 루트 연산
+if ( 거리 > 0 ) {
+	  // 감속하며 목표위치로 이동
 	speed = dist / deceleration;
-	speed = min(speed, MaxSpeed);
+	speed = min ( speed, MaxSpeed);
 	DV = VT * speed / 거리; // N(VT) * speed
-	return DV - CV;
-	// 목표점에 가까워 질수로 
-	// DV ? , CV ?
+	return DV-CV;
 }
+*/
+
+//아무래도 이전의 한글은 깨지고 새로쓴건 ㅇ남아있다고 추측
