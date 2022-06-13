@@ -2,6 +2,7 @@
 #include "Vector2D.h"
 #include "main.h"
 
+
 class Seeker
 {
 	int _x, _y;
@@ -11,7 +12,5 @@ public:
 	void update();
 
 private:
-	Vector2D w_position;
-	Vector2D
 
 };

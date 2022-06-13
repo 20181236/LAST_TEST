@@ -1,11 +1,13 @@
 #include "Walker.h"
+
 #include <random>
 
+//워커에서 할것 숨기
 
 Walker::Walker(int x, int y) 
 {
-  _x = x;
-  _y = y;
+	_x = x;
+	_y = y;
 }
 
 void Walker::update() 
