@@ -6,6 +6,8 @@ const int DELAY_TIME = 1000.0f / FPS;
 
 //git test 1
 
+//ÇÑ±Û ±úÁü Å×½ºÆ®
+
 int main(int argc, char* argv[])
 {
   if (TheGame::Instance()->setup() ) 
