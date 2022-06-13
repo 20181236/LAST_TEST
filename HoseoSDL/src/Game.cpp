@@ -7,6 +7,10 @@
 #include "Seeker.h"
 #include "Walker.h"
 
+#include <math.h>
+
+int randrand = rand()%200;
+
 Game* Game::s_pInstance = 0;
 
 bool Game::setup()
@@ -17,6 +21,8 @@ bool Game::setup()
 
   _walker = new Walker(WIDTH/2,HEIGHT/2);
   _Seeker = new Seeker(WIDTH / 2 + 500, HEIGHT / 2 + 500);
+  for (int i = 0; i < 5; i++)
+      _obstacles = new obstacles(WIDTH / 2 + randrand, HEIGHT / 2 + randrand);
 
   return result;
 }

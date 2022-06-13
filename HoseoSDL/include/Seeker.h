@@ -10,14 +10,12 @@ public:
 	Seeker(int x, int y);
 	void draw(SDL_Renderer* renderer);
 	void update();
+	void flee();
 
 private:
-	int speed;
-	int deceleration;
-	int dist;
+	Vector2D speed;
+	Vector2D deceleration;
+	Vector2D dist;
 	int MaxSpeed;
+	// direction;
 };
-
-// 방향 = VT = OT - OV
-//거리 =VT.Lenght()'
-//=DV VT * speed/거리
